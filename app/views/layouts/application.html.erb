@@ -11,12 +11,14 @@
   </head>
 
   <body>
-    <header>
-      <h1>Hogwarts School</h1>
-       <p>
-       <%= link_to 'Home', root_path %>
-       </p>
-    </header>
-    <%= yield %>
+    <div class="container">
+      <header>
+        <h1>Hogwarts School</h1>
+        <p>
+        <%= link_to 'Home', root_path %>
+        </p>
+      </header>
+     <%= yield %>
+    </div>
   </body>
 </html>
