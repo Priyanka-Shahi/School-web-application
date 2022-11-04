@@ -4,6 +4,6 @@ class TeachersController < ApplicationController
   end
 
   def show
-
+    @teacher = Teacher.includes(:house).find(params[:id])
   end
 end
