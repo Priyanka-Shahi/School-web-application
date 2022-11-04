@@ -5,7 +5,7 @@
   <ul>
     <% @teachers.each do |teacher| %>
         <li>
-            <%= link_to teacher.name, teacher %> of house
+            <%= link_to teacher.name, teacher %> is in house
             <%= link_to teacher.house.name, teacher.house %>
         </li>
     <% end %>
