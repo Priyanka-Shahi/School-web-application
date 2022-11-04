@@ -5,7 +5,7 @@
 <% else %>
   <ul>
     <% @students.each do |student| %>
-        <li><%= student.name %></li>
+        <li><%= link_to student.name, student_path(student) %></li>
     <% end %>
   </ul>
 <% end %>
