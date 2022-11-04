@@ -34,7 +34,9 @@ end
 
 
 
-puts "Created #{House.count} Houses."
+puts "Created #{House.count} Houses." 
 puts "Created #{Student.count} Students."
 puts "Created #{Teacher.count} Teachers."
 puts "Created #{Appointment.count} Appointments."
+
+AdminUser.create!(email: 'admin@example.com', password: 'password!', password_confirmation: 'password!') if Rails.env.development?
