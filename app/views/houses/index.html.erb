@@ -4,6 +4,7 @@
   <% @houses.each do |house| %>
     <h2><%= house.name %></h2>
     <p>There are <%= house.students.count %> students in this house.</p>
+    <p>There are <%= house.teachers.count %> teachers in this house.</p>
     <p>The students of this house have accumulated <%= house.points %> points.</p>
     <p>Learn more about house <%= link_to "house #{house.name}", house %></p>
 

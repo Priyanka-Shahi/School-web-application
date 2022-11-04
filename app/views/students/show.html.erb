@@ -1,2 +1,2 @@
 <h2><%= @student.name %></h2>
-<p>This student belongs to house <%= @student.house.name %></p>
+<p>This student belongs to house <%= link_to @student.house.name, @student.house %></p>
