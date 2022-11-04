@@ -1,4 +1,6 @@
 
+
+Appointment.destroy_all
 Student.destroy_all
 Teacher.destroy_all
 House.destroy_all
@@ -21,6 +23,18 @@ NUMBER_OF_HOUSES.times do
     end
 end
 
+teachers_with_appointments = Teacher.all.sample(10)
+
+teachers_with_appointments.each do |teacher|
+    students =  Student.all.sample(4)
+    students.each do |student|
+        Appointment.create(student: student, teacher: teacher, appointment_date: Faker::Time.forward(days: 50, period: :morning))
+    end
+end
+
+
+
 puts "Created #{House.count} Houses."
 puts "Created #{Student.count} Students."
 puts "Created #{Teacher.count} Teachers."
+puts "Created #{Appointment.count} Appointments."
