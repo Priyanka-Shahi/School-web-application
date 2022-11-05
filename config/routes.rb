@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   resources "students", only: [:index, :show]
 
   resources "teachers", only: [:index, :show]
+
+  
+  get 'about', to: 'pages#about', as: 'about'
 end
