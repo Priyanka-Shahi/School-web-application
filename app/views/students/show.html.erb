@@ -4,7 +4,7 @@
 <h3>Appointments</h3>
 
 <% if @student.teachers.empty? %>
-    <p><%= @sttudent.name %> has never had an appointment with a teacher. %></p>
+    <p><%= @student.name %> has never had an appointment with a teacher.</p>
 <% else %>
     <p>Here are the teachers <%= @student.name %> has appointments with: </p>
     <ul>
