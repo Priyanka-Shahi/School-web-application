@@ -28,7 +28,7 @@ teachers_with_appointments = Teacher.all.sample(10)
 teachers_with_appointments.each do |teacher|
     students =  Student.all.sample(4)
     students.each do |student|
-        Appointment.create(student: student, teacher: teacher, appointment_date: Faker::Time.forward(days: 50, period: :morning))
+        Appointment.create(student: student, teacher: teacher, appointment_date: Faker::Time.forward(days_in_the_future, :morning))
     end
 end
 

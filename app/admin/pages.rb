@@ -16,5 +16,5 @@ ActiveAdmin.register Page do
   # end
 
   permit_params :title, :content, :permalink
-  
+
 end
