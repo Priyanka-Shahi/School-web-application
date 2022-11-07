@@ -1,5 +1,4 @@
 
-
 Appointment.destroy_all
 Student.destroy_all
 Teacher.destroy_all

@@ -14,5 +14,5 @@ ActiveAdmin.register Appointment do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  permit_params :student_id, :teacher_id, :meeting_time
+  permit_params :student_id, :teacher_id, :appointment_date
 end
