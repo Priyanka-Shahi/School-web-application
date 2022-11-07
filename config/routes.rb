@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources "teachers", only: [:index, :show]
 
-  resources :pages
+  
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -26,6 +26,6 @@ Rails.application.routes.draw do
     end
   end  
   
-  get ':permalink', to: 'pages#permalink'
+  
 
 end
