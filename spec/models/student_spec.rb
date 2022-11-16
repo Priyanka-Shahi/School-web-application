@@ -1,20 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Student, type: :model do
-    let(:attributes) do
-        {
-            name: "Harry Potter"
-        }
+    describe 'associations' do
+      it { should belong_to(:house) }
     end
   
-    it "is valid with proper data" do
-      expect(Student.new(attributes).valid?).to be_falsey
+    describe 'validations' do
+      it { should validate_presence_of(:name) }
     end
-
-
-    it "is invalid without a name" do
-        attributes[:name] = nil
-        expect(Student.new(attributes).valid?).to be_falsey
-    end
-
 end
